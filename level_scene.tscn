@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://c5eoj4foc823t"]
+
+[ext_resource type="Script" uid="uid://bfmkhvrpijbdq" path="res://actual_timer_screen.gd" id="1_3mivm"]
+[ext_resource type="Texture2D" uid="uid://bfd3k0de43rqe" path="res://background/pink_background.png" id="2_lwxgr"]
+[ext_resource type="Texture2D" uid="uid://b8qo70mk7yl3c" path="res://background/chem-icon.png" id="3_8wodn"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j2453"]
+load_path = "res://.godot/imported/chem-icon.png-19e56db639f66a942ac3d49c5b1fb74f.ctex"
+
+[node name="Node2D" type="Node2D" unique_id=728390612]
+script = ExtResource("1_3mivm")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1321388012]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5634269, 0.42251825)
+texture = ExtResource("2_lwxgr")
+
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=2133914841]
+offset_left = 260.0
+offset_top = 158.0
+offset_right = 916.0
+offset_bottom = 286.0
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1079980137]
+layout_mode = 2
+texture = ExtResource("3_8wodn")
+expand_mode = 3
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=1862049248]
+layout_mode = 2
+texture = ExtResource("3_8wodn")
+expand_mode = 3
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=768490947]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_j2453")
+expand_mode = 3
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1628169899]
+layout_mode = 2
+texture = ExtResource("3_8wodn")
+expand_mode = 3
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=1669102273]
+layout_mode = 2
+texture = ExtResource("3_8wodn")
+expand_mode = 3
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=544851714]
+clip_contents = false
+offset_left = 508.0
+offset_top = 316.0
+offset_right = 692.0
+offset_bottom = 384.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.86795855, 0.4311736, 0.5019608, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/normal_font_size = 50
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=423662913]
+clip_contents = false
+offset_left = 563.0
+offset_top = 415.0
+offset_right = 649.0
+offset_bottom = 510.0
+theme_override_colors/font_outline_color = Color(0.86795855, 0.4311736, 0.5019608, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/normal_font_size = 50
+text = "0.0"
