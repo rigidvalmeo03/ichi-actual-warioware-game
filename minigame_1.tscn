@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://qiirk6p5nteg"]
+
+[ext_resource type="Texture2D" uid="uid://cuggydj4ibg1l" path="res://background/Untitled577_20261017221021.png" id="1_2n61g"]
+[ext_resource type="PackedScene" uid="uid://ewsy2d2bkqbu" path="res://player.tscn" id="2_gi7k6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dtglo"]
+size = Vector2(1152.75, 52.25)
+
+[node name="minigame_1" type="Node2D" unique_id=409837592]
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=175234674]
+scale = Vector2(0.98900634, 0.9906807)
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="background" type="TextureRect" parent="ScrollingBackground" unique_id=1260843676]
+offset_right = 2048.0
+offset_bottom = 1536.0
+scale = Vector2(0.56759775, 0.42543155)
+texture = ExtResource("1_2n61g")
+
+[node name="Platform1" type="StaticBody2D" parent="." unique_id=198145188]
+
+[node name="ColorRect" type="ColorRect" parent="Platform1" unique_id=607834600]
+offset_left = 1.0
+offset_top = 600.0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(0.695124, 0.27250814, 0.3535774, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1" unique_id=533413410]
+position = Vector2(574, 623.125)
+shape = SubResource("RectangleShape2D_dtglo")
+
+[node name="Platform2" type="StaticBody2D" parent="." unique_id=436514694]
+position = Vector2(257, -143)
+scale = Vector2(0.32178476, 0.9675861)
+
+[node name="ColorRect" type="ColorRect" parent="Platform2" unique_id=449993655]
+offset_left = 1.0
+offset_top = 600.0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(0.695124, 0.27250814, 0.3535774, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1606593435]
+position = Vector2(574, 623.125)
+shape = SubResource("RectangleShape2D_dtglo")
+
+[node name="Platform3" type="StaticBody2D" parent="." unique_id=1206291575]
+position = Vector2(559, -297)
+scale = Vector2(0.32178476, 0.9675861)
+
+[node name="ColorRect" type="ColorRect" parent="Platform3" unique_id=663381974]
+offset_left = 1.0
+offset_top = 600.0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(0.695124, 0.27250814, 0.3535774, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=844903125]
+position = Vector2(574, 623.125)
+shape = SubResource("RectangleShape2D_dtglo")
+
+[node name="Platform4" type="StaticBody2D" parent="." unique_id=1728556293]
+position = Vector2(841, -440)
+scale = Vector2(0.32178476, 0.9675861)
+
+[node name="ColorRect" type="ColorRect" parent="Platform4" unique_id=252303414]
+offset_left = 1.0
+offset_top = 600.0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(0.695124, 0.27250814, 0.3535774, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4" unique_id=435749636]
+position = Vector2(574, 623.125)
+shape = SubResource("RectangleShape2D_dtglo")
+
+[node name="Platform5" type="StaticBody2D" parent="." unique_id=328344858]
+position = Vector2(1218, -299)
+scale = Vector2(0.32178476, 0.9675861)
+
+[node name="ColorRect" type="ColorRect" parent="Platform5" unique_id=349643884]
+offset_left = 1.0
+offset_top = 600.0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(0.695124, 0.27250814, 0.3535774, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform5" unique_id=1627465910]
+position = Vector2(574, 623.125)
+shape = SubResource("RectangleShape2D_dtglo")
+
+[node name="Platform6" type="StaticBody2D" parent="." unique_id=2090716400]
+position = Vector2(1623.0001, -162.00005)
+scale = Vector2(0.32178476, 0.9675861)
+
+[node name="ColorRect" type="ColorRect" parent="Platform6" unique_id=725773063]
+offset_left = 1.0
+offset_top = 600.0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(0.695124, 0.27250814, 0.3535774, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform6" unique_id=977780040]
+position = Vector2(574, 623.125)
+shape = SubResource("RectangleShape2D_dtglo")
+
+[node name="Player" parent="." unique_id=795808238 instance=ExtResource("2_gi7k6")]
+position = Vector2(215, 42)
